@@ -1,0 +1,25 @@
+/*
+ * Demonstração dos mecanismos de customização da UI base do Kami.
+ *
+ * 1. TEMA POR ARQUIVO — os componentes não têm cor própria: leem tokens
+ *    (--primary, --radius, ...). Redefinir tokens dentro de uma classe
+ *    re-tematiza TUDO que estiver dentro dela. Um projeto consumidor faz o
+ *    mesmo no :root do próprio arquivo de tema para tematizar o app inteiro.
+ */
+.temaExemplo {
+  --primary: #898e64; /* Palm Leaf — exemplo de re-tematização por arquivo */
+  --primary-foreground: #f6f7eb;
+  --radius: 0.2rem;
+}
+
+/*
+ * 2. STYLES.CLASSE — o padrão do time: classe de CSS Module passada via
+ *    `className`. Vence os utilitários do componente pela regra de cascata do
+ *    CSS: o Tailwind v4 gera utilities dentro de @layer, e estilo FORA de
+ *    layer (como este) tem prioridade sobre estilo em layer — sem !important.
+ */
+.botaoDestaque {
+  border: 1px dashed currentColor;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

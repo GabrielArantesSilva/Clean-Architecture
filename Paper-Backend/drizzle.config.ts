@@ -1,0 +1,10 @@
+import { defineConfig } from 'drizzle-kit'
+
+export default defineConfig({
+	dialect: 'postgresql',
+	schema: './src/core/database/schema.ts',
+	out: './drizzle',
+	dbCredentials: {
+		url: process.env.DATABASE_URL ?? 'postgres://kami:kami@localhost:5432/kami_backend'
+	}
+})

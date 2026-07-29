@@ -1,0 +1,43 @@
+{
+  "name": "api-rest-solid",
+  "version": "1.0.0",
+  "description": "REST API de estudo de SOLID e Clean Code, com cadastro de usuário.",
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "packageManager": "pnpm@10.19.0",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.1.1",
+    "@types/nodemailer": "^8.0.1",
+    "prisma": "^6.19.3",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "nodemailer": "^9.0.3",
+    "tsx": "^4.23.0",
+    "zod": "^3.24.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "bcrypt",
+      "@prisma/client",
+      "@prisma/engines",
+      "prisma"
+    ]
+  }
+}

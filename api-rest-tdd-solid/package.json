@@ -1,0 +1,27 @@
+{
+  "name": "api-rest-tdd-solid",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.19.0",
+  "dependencies": {
+    "express": "^5.2.1",
+    "tsc": "^2.0.4",
+    "tsx": "^4.23.1"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.15.43",
+    "@swc/jest": "^0.2.39",
+    "@types/node": "^26.1.1",
+    "jest": "^30.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
+  }
+}

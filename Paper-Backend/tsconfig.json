@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022"],
+    "paths": {
+      "@/use-case": ["./src/framework/use-case/index.ts"],
+      "@/database": ["./src/framework/database/index.ts"],
+      "@/http": ["./src/framework/http/index.ts"],
+      "@/modules/*": ["./src/modules/*"],
+      "@/*": ["./src/*"]
+    },
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true
+  },
+  "include": ["src", "scripts"]
+}

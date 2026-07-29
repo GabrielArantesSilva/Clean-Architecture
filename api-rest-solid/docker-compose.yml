@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: api-rest-solid-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: api_rest_solid
+    ports:
+      - "5434:5432"
+    volumes:
+      - api-rest-solid-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  api-rest-solid-postgres-data:
